@@ -1,0 +1,70 @@
+$dark-color: #0b0d17;
+$light-color: #d0d6f9;
+
+body {
+  font-family: "Bellefair", serif;
+}
+
+h1 {
+  font-size: 150px;
+  color: white;
+}
+
+h2 {
+  font-size: 100px;
+  color: white;
+}
+
+h3 {
+  font-size: 56px;
+  color: white;
+}
+
+h4 {
+  font-size: 32px;
+  color: white;
+}
+
+h5 {
+  font-size: 28px;
+  color: $light-color;
+  letter-spacing: 4.75;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.subheading-1 {
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+  color: white;
+}
+
+.subheading-2 {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.35;
+  color: white;
+}
+
+.nav__text,
+a {
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4px;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
