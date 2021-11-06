@@ -1,35 +1,29 @@
 import logo from "../image/shared/logo.svg";
 import burger from "../image/shared/icon-hamburger.svg";
+import ListItem from "./ListItem";
+import { useState } from "react";
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const burgerToggle = () => {
+    if (!isOpen) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  };
   return (
     <header>
       <div className="container row">
         <img src={logo} alt="logo" className="logo" />
-        <nav className="navbar">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                00 HOME
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                01 DESTINATION
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                02 CREW
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                03 TECHNOLOGY773
-              </a>
-            </li>
+        <nav className={`navbar`}>
+          <ul className={`nav__list ${isOpen ? "nav__list--active" : ""}`}>
+            <ListItem title={"00 HOME"} />
+            <ListItem title={"01 HOME"} />
+            <ListItem title={"02 HOME"} />
+            <ListItem title={"03 HOME"} />
           </ul>
         </nav>
-        <div className="hamburger" onclick>
+        <div className="hamburger" onClick={burgerToggle}>
           <img src={burger} alt="" />
         </div>
       </div>
