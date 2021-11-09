@@ -16,11 +16,15 @@
   .nav__item {
     padding: 1.3rem 0;
   }
+
+  transform: translateX(100%);
+  transition: all 0.6s ease-in-out;
 }
 header {
   min-height: 10vh;
   display: flex;
   align-items: center;
+  background-color: $dark-color;
   .hamburger {
     z-index: 100;
     align-self: center;
@@ -31,5 +35,5 @@ header {
 }
 
 .nav__list--active {
-  background-color: red;
+  transform: translateX(0%);
 }

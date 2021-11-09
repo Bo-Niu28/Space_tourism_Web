@@ -1,45 +1,50 @@
 $dark-color: #0b0d17;
 $light-color: #d0d6f9;
 
+html {
+  font-size: 50%;
+}
+
 body {
   font-family: "Bellefair", serif;
 }
 
 h1 {
-  font-size: 150px;
+  font-size: 15rem;
   color: white;
+  font-family: "Bellefair", serif;
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 10rem;
   color: white;
 }
 
 h3 {
-  font-size: 56px;
+  font-size: 5.6rem;
   color: white;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: white;
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 2.8rem;
   color: $light-color;
   letter-spacing: 4.75;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 .subheading-1 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-family: "Bellefair", serif;
   color: white;
 }
 
 .subheading-2 {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.35;
   color: white;
@@ -47,14 +52,14 @@ h5 {
 
 .nav__text,
 a {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4px;
   color: white;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
   font-family: "Barlow Condensed", sans-serif;
 }

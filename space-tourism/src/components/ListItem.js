@@ -1,7 +1,7 @@
-const ListItem = ({ title, onToggle }) => {
+const ListItem = ({ title }) => {
   return (
     <li>
-      <p style={{ cursor: "pointer" }} className="nav__link" onClick={onToggle}>
+      <p style={{ cursor: "pointer" }} className="nav__text nav__item">
         {title}
       </p>
     </li>
