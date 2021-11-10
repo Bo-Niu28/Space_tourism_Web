@@ -17,3 +17,26 @@
     padding-top: 4rem;
   }
 }
+
+.explore {
+  margin-top: 10rem;
+  width: 200px;
+  height: 200px;
+  color: $dark-color;
+  background-color: white;
+  border-radius: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  h3 {
+    color: $dark-color;
+    align-self: center;
+  }
+  transition: all 0.4s ease;
+}
+
+.explore:hover {
+  box-shadow: 0 0 0 50px #2c2c2c;
+}

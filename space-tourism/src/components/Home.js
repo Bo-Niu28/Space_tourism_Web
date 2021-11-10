@@ -1,7 +1,8 @@
+import Explore from "./Explore";
 const Home = () => {
   return (
     <section className="home">
-      <div className="container">
+      <div className="container center">
         <h5>SO, YOU WANT TO TRAVEL TO</h5>
         <h1>SPACE</h1>
         <p>
@@ -10,6 +11,7 @@ const Home = () => {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
+        <Explore />
       </div>
     </section>
   );
