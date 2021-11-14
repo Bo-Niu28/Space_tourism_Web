@@ -2,7 +2,7 @@ $dark-color: #0b0d17;
 $light-color: #d0d6f9;
 
 html {
-  font-size: 50%;
+  font-size: 62.5%;
 }
 
 body {
@@ -33,7 +33,7 @@ h4 {
 h5 {
   font-size: 2.8rem;
   color: $light-color;
-  letter-spacing: 4.75;
+  letter-spacing: 4.7px;
   font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -43,7 +43,8 @@ h5 {
   color: white;
 }
 
-.subheading-2 {
+.subheading-2,
+h6 {
   font-size: 1.4rem;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.35;

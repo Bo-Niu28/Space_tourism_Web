@@ -6,15 +6,15 @@
   text-align: center;
   line-height: 1.5;
   h1 {
-    font-size: 13rem;
+    font-size: 12rem;
   }
   p {
     color: $light-color;
     line-height: 1.6;
-    font-size: 2.4rem;
   }
   h5 {
     padding-top: 4rem;
+    font-size: 2rem;
   }
 }
 
@@ -33,6 +33,9 @@
   h3 {
     color: $dark-color;
     align-self: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
   }
   transition: all 0.4s ease;
 }

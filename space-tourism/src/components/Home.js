@@ -1,4 +1,5 @@
 import Explore from "./Explore";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <section className="home">
@@ -11,7 +12,9 @@ const Home = () => {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-        <Explore />
+        <Link to="destination">
+          <Explore />
+        </Link>
       </div>
     </section>
   );

@@ -15,10 +15,18 @@ const Header = () => {
         <img src={logo} alt="logo" className="logo" />
         <nav className={`navbar`}>
           <ul className={`nav__list ${isOpen ? "nav__list--active" : ""}`}>
-            <ListItem title={"00 HOME"} />
-            <ListItem title={"01 DESTINATION"} />
-            <ListItem title={"02 CREW"} />
-            <ListItem title={"03 TECHNOLOGY"} />
+            <Link to="/">
+              <ListItem title={"00 HOME"} onToggle={burgerToggle} />
+            </Link>
+            <Link to="destination">
+              <ListItem title={"01 DESTINATION"} onToggle={burgerToggle} />
+            </Link>
+            <Link to="crew">
+              <ListItem title={"02 CREW"} onToggle={burgerToggle} />
+            </Link>
+            <Link to="technology">
+              <ListItem title={"03 TECHNOLOGY"} onToggle={burgerToggle} />
+            </Link>
           </ul>
         </nav>
         <div className="hamburger" onClick={burgerToggle}>

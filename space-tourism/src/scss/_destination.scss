@@ -1,0 +1,62 @@
+.destination {
+  background-image: url(../image/destination/background-destination-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 90vh;
+  text-align: center;
+  img {
+    width: 250px;
+    display: flex;
+    margin: 0 auto;
+  }
+  p {
+    line-height: 1.6;
+    color: $light-color;
+  }
+}
+.des__heading {
+  padding: 2rem 0 3rem 0;
+  color: grey;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  span {
+    color: white;
+    margin-left: 1rem;
+  }
+}
+
+.desNav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+
+  .desNav__link {
+    text-decoration: none;
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.desNav__item--active {
+  padding: 1rem 0;
+  border-bottom: 3px solid white;
+  p {
+    color: white;
+  }
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+h6 {
+  color: $light-color;
+}
+.subheading-1 {
+  padding: 1rem 0 3rem 0;
+}
