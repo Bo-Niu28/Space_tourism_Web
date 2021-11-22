@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-const Distination = () => {
+const Crew = () => {
   return (
-    <div className="destination">
+    <div className="crew">
       <div className="container">
         <h5 className="des__heading">
-          01 <span> Pick Your Destination </span>
+          02 <span> Meet your crew </span>
         </h5>
         <Outlet />
       </div>
@@ -12,4 +12,4 @@ const Distination = () => {
   );
 };
 
-export default Distination;
+export default Crew;

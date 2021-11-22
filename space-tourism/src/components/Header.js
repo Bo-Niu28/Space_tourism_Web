@@ -18,7 +18,7 @@ const Header = () => {
             <Link to="/">
               <ListItem title={"00 HOME"} onToggle={burgerToggle} />
             </Link>
-            <Link to="destination">
+            <Link to="destination/moon">
               <ListItem title={"01 DESTINATION"} onToggle={burgerToggle} />
             </Link>
             <Link to="crew">
@@ -29,7 +29,11 @@ const Header = () => {
             </Link>
           </ul>
         </nav>
-        <div className="hamburger" onClick={burgerToggle}>
+        <div
+          className="hamburger"
+          onClick={burgerToggle}
+          style={{ cursor: "pointer", padding: "1rem" }}
+        >
           {isOpen ? (
             <img src={close} alt="Close Icon" />
           ) : (

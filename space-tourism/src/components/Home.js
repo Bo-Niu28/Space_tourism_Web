@@ -12,7 +12,7 @@ const Home = () => {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-        <Link to="destination">
+        <Link to="destination/moon">
           <Explore />
         </Link>
       </div>

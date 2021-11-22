@@ -1,10 +1,11 @@
 import imageMars from "../image/destination/image-mars.png";
+import Des__Nav from "./Des__Nav";
 const Des__Mars = () => {
   return (
     <div className="Destination__content">
       <img src={imageMars} alt="Moon picture" />
       <Des__Nav />
-      <h3>Mars</h3>
+      <h3>MARS</h3>
       <p>
         Don’t forget to pack your hiking boots. You’ll need them to tackle
         Olympus Mons, the tallest planetary mountain in our solar system. It’s
