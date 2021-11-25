@@ -9,6 +9,8 @@ import Des__Moon from "./components/Des__Moon";
 import Des__Europa from "./components/Des__Europa";
 import Des__Titan from "./components/Des__Titan";
 import Crew from "./components/Crew";
+import Crew__one from "./components/Crew__one";
+import Crew__two from "./components/Crew__two";
 
 function App() {
   return (
@@ -23,7 +25,10 @@ function App() {
             <Route path="europa" element={<Des__Europa />} />
             <Route path="titan" element={<Des__Titan />} />
           </Route>
-          <Route path="crew/*" element={<Crew />}></Route>
+          <Route path="crew/*" element={<Crew />}>
+            <Route path="commander" element={<Crew__one />} />
+            <Route path="missionspecialist" element={<Crew__two />} />
+          </Route>
         </Routes>
       </div>
     </Router>
