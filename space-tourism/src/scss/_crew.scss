@@ -1,0 +1,44 @@
+.crew {
+  background-image: url(../image/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.crew__content {
+  text-align: center;
+
+  img {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  hr {
+    margin: 0;
+    border: 0.5px solid;
+  }
+  h4 {
+    padding: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.6;
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+  }
+
+  p {
+    line-height: 1.5;
+    color: $light-color;
+  }
+}
+
+.crew__heading {
+  text-align: center;
+}

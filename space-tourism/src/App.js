@@ -11,6 +11,8 @@ import Des__Titan from "./components/Des__Titan";
 import Crew from "./components/Crew";
 import Crew__one from "./components/Crew__one";
 import Crew__two from "./components/Crew__two";
+import Crew__three from "./components/Crew__three";
+import Crew__four from "./components/Crew__four";
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
           <Route path="crew/*" element={<Crew />}>
             <Route path="commander" element={<Crew__one />} />
             <Route path="missionspecialist" element={<Crew__two />} />
+            <Route path="pilot" element={<Crew__three />} />
+            <Route path="pilot" element={<Crew__three />} />
+            <Route path="elightengineer" element={<Crew__four />} />
           </Route>
         </Routes>
       </div>
