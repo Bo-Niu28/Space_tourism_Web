@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 const Des__Nav = () => {
   const location = useLocation();
-  console.log(location.pathname.split("/")[2]);
   return (
     <nav>
       <ul className="desNav__list">

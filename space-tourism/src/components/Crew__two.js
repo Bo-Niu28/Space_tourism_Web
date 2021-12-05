@@ -1,9 +1,11 @@
 import crewTwo from "../image/crew/image-mark-shuttleworth.png";
+import Crew__Nav from "./Crew__Nav";
 const Crew__two = () => {
   return (
     <div className="crew__content">
       <img src={crewTwo} alt="A Picture of Mark Shuttleworth" />
-      {/* <Crew__Nav /> */}
+      <hr />
+      <Crew__Nav />
       <h5>Mission Specialist </h5>
       <h4>MARK SHUTTLEWORTH</h4>
       <p>

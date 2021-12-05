@@ -1,10 +1,11 @@
 import crewFour from "../image/crew/image-anousheh-ansari.png";
+import Crew__Nav from "./Crew__Nav";
 const Crew__four = () => {
   return (
     <div className="crew__content">
       <img src={crewFour} alt="A Picture of Anousheh Ansari" />
       <hr />
-      {/* <Crew__Nav /> */}
+      <Crew__Nav />
       <h5>Flight Engineer</h5>
       <h4>Anousheh Ansari</h4>
       <p>

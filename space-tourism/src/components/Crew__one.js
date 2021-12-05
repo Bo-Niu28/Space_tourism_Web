@@ -1,10 +1,11 @@
 import crewOne from "../image/crew/image-douglas-hurley.png";
-const Crew__one = () => {
+import Crew__Nav from "./Crew__Nav";
+const Crew__one = ({ activeNav }) => {
   return (
     <div className="crew__content">
       <img src={crewOne} alt="A Picture of Douglas Hurley" />
       <hr />
-      {/* <Crew__Nav /> */}
+      <Crew__Nav activeNav={activeNav} />
       <h5>Commander</h5>
       <h4>Douglas Hurley</h4>
       <p>

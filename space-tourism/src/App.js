@@ -3,7 +3,12 @@ import "./components/Header.js";
 import Header from "./components/Header.js";
 import Home from "./components/Home";
 import Destination from "./components/Distination";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Des__Mars from "./components/Des__Mars";
 import Des__Moon from "./components/Des__Moon";
 import Des__Europa from "./components/Des__Europa";
@@ -15,6 +20,14 @@ import Crew__three from "./components/Crew__three";
 import Crew__four from "./components/Crew__four";
 
 function App() {
+  const activeNav = (e, id) => {
+    const path = e.pathname.split("/")[2];
+    if (path === id) {
+      return "crewNav__active";
+    } else {
+      return "";
+    }
+  };
   return (
     <Router>
       <div className="App">
@@ -28,9 +41,11 @@ function App() {
             <Route path="titan" element={<Des__Titan />} />
           </Route>
           <Route path="crew/*" element={<Crew />}>
-            <Route path="commander" element={<Crew__one />} />
+            <Route
+              path="commander"
+              element={<Crew__one activeNav={activeNav} />}
+            />
             <Route path="missionspecialist" element={<Crew__two />} />
-            <Route path="pilot" element={<Crew__three />} />
             <Route path="pilot" element={<Crew__three />} />
             <Route path="elightengineer" element={<Crew__four />} />
           </Route>

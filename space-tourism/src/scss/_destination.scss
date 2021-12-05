@@ -42,6 +42,11 @@
   }
 }
 
+.desNav__item:hover {
+  padding: 1rem 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.618);
+}
+
 .desNav__item--active {
   padding: 1rem 0;
   border-bottom: 3px solid white;

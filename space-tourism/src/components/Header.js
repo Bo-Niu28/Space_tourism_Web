@@ -21,7 +21,7 @@ const Header = () => {
             <Link to="destination/moon">
               <ListItem title={"01 DESTINATION"} onToggle={burgerToggle} />
             </Link>
-            <Link to="crew">
+            <Link to="crew/commander">
               <ListItem title={"02 CREW"} onToggle={burgerToggle} />
             </Link>
             <Link to="technology">
