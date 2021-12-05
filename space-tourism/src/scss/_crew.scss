@@ -10,7 +10,7 @@
   text-align: center;
 
   img {
-    width: 80%;
+    width: 55%;
     display: flex;
     margin: 0 auto;
   }
@@ -36,6 +36,7 @@
   p {
     line-height: 1.5;
     color: $light-color;
+    letter-spacing: 1px;
   }
 }
 
