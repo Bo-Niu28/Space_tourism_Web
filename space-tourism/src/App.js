@@ -18,6 +18,7 @@ import Crew__one from "./components/Crew__one";
 import Crew__two from "./components/Crew__two";
 import Crew__three from "./components/Crew__three";
 import Crew__four from "./components/Crew__four";
+import Technology from "./components/Technology";
 
 function App() {
   const activeNav = (e, id) => {
@@ -49,6 +50,7 @@ function App() {
             <Route path="pilot" element={<Crew__three />} />
             <Route path="elightengineer" element={<Crew__four />} />
           </Route>
+          <Route path="technology/*" element={<Technology />}></Route>
         </Routes>
       </div>
     </Router>
